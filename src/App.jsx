@@ -1,0 +1,31 @@
+import React from "react";
+import bgVideo from "./assets/bgVideo.mp4";
+import Navbar from "./components/navbar/Navbar";
+import Hero from "./components/Hero/hero.jsx";
+import Services from "./components/Services/services.jsx";
+import Banner from "./components/Banner/Banner.jsx";
+
+const App = () => {
+  return (
+    <>
+      <div className="h-[700px] relative">
+        <video
+          autoPlay
+          loop
+          muted
+          className="absolute right-0 top-0 h-[700px] w-full object-cover z-[-1]"
+          src={bgVideo}
+        ></video>
+        <Navbar />
+        <Hero />
+        
+      </div>
+      <div>
+       <Services/>
+       <Banner/>
+      </div>
+    </>
+  );
+};
+
+export default App;
