@@ -4,6 +4,8 @@ import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/Hero/hero.jsx";
 import Services from "./components/Services/services.jsx";
 import Banner from "./components/Banner/Banner.jsx";
+import Banner2 from "./components/Banner/Banner2.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 const App = () => {
   return (
@@ -23,6 +25,8 @@ const App = () => {
       <div>
        <Services/>
        <Banner/>
+       <Banner2/>
+       <Footer/>
       </div>
     </>
   );
