@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="fixed top-0 right-0 w-full z-50 bg-black/10 backdrop-blur-sm py-3">
+    <div data-aos="fade-down" className="fixed top-0 right-0 w-full z-50 bg-black/10 backdrop-blur-sm py-3">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo */}

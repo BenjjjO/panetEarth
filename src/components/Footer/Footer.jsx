@@ -1,17 +1,19 @@
 import React from "react";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
 import { HiLocationMarker } from "react-icons/hi";
 import { MdCall, MdMessage } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-800 text-white">
-      <section className="max-w-[1200px] mx-auto">
-        <div className="grid md:grid-cols-3 py-5 gap-6">
+    <div className="bg-gray-800 text-white px-5 relative z-50">
+      <section className="max-w-[1200px] mx-auto text-white">
+        <div className="grid md:grid-cols-3 py-5">
           
           {/* Newsletter */}
-          <div>
-            <h1 className="text-xl sm:text-3xl font-bold mb-3">
-              Be ready to grow
+          <div >
+            <h1 className="text-xl sm:text-3xl font-bold sm:text-left text-justify mb-3">
+              Be Ready To Grow
             </h1>
             <p>
               Get Exclusive <span className="font-bold">Updates</span> straight to
@@ -61,6 +63,30 @@ const Footer = () => {
             </div>
 
           </div>
+        </div>
+        <div className="hidden sm:block">
+            <div className="text-center">
+                <span className="text-sm text-gray-400 ">
+ Copyright &copy; {new Date().getFullYear()} by BC
+                </span>
+                <div className="flex items-center justify-center gap-4 pb-4">
+                    <a href="#">
+                        <FaInstagram className="text-4xl"/>
+                    </a>
+                    <a href="#">
+                        <FaFacebook className="text-4xl"/>
+                    </a>
+                    <a href="#">
+<FaLinkedin className="text-4xl"/>
+                    </a>
+                </div>
+                <span className="text-sm text-gray-400 "> 
+                    <ul className="flex gap-3">
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+                </span>
+            </div>
         </div>
       </section>
     </div>
