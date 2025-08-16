@@ -17,7 +17,7 @@ const Banner2 = () => {
 
                 </div>
                 <div data-aos="zoom-in">
-                    <img src={sateliteImg} alt="" className=' w-full sm:w-[80%] mx-auto max-h-[350px] '/>
+                    <img src={sateliteImg} alt="" className='w-full sm:w-[80%] h-auto rounded-lg shadow-lg object-contain '/>
                 </div>
             </div>
         </div>
