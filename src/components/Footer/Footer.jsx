@@ -8,16 +8,17 @@ const Footer = () => {
   return (
     <div className="bg-gray-800 text-white px-5 relative z-50">
       <section className="max-w-[1200px] mx-auto text-white">
-        <div className="grid md:grid-cols-3 py-5">
+        
+        {/* Main Footer Content */}
+        <div className="grid md:grid-cols-3 py-8 gap-8 border-b border-gray-700">
           
           {/* Newsletter */}
-          <div >
-            <h1 className="text-xl sm:text-3xl font-bold sm:text-left text-justify mb-3">
+          <div>
+            <h1 className="text-xl sm:text-3xl font-bold mb-3">
               Be Ready To Grow
             </h1>
             <p>
-              Get Exclusive <span className="font-bold">Updates</span> straight to
-              your inbox.
+              Get Exclusive <span className="font-bold">Updates</span> straight to your inbox.
             </p>
             <div className="flex items-center h-10 mt-4">
               <input
@@ -31,63 +32,57 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Links & Contact */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
-            
-            {/* Quick Links */}
-            <div className="py-8 px-4">
-              <h1 className="text-xl font-bold mb-3">Quick Links</h1>
-              <ul className="flex flex-col gap-3">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Login</a></li>
-              </ul>
-            </div>
+          {/* Quick Links */}
+          <div className="px-4">
+            <h1 className="text-xl font-bold mb-3">Quick Links</h1>
+            <ul className="flex flex-col gap-3">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
 
-            {/* Contact */}
-            <div className="py-8 px-4 col-span-2 sm:col-span-1">
-              <h1 className="text-xl font-bold mb-3">Contact Us</h1>
-              <div className="flex items-center gap-3">
-                <HiLocationMarker />
-                <p>Kerala, India</p>
-              </div>
-              <div className="flex items-center gap-3 mt-3">
-                <MdMessage />
-                <p>cba@gmail.com</p>
-              </div>
-              <div className="flex items-center gap-3 mt-3">
-                <MdCall />
-                <p>+91 1</p>
-              </div>
+          {/* Contact */}
+          <div className="px-4">
+            <h1 className="text-xl font-bold mb-3">Contact Us</h1>
+            <div className="flex items-center gap-3">
+              <HiLocationMarker />
+              <p>Kerala, India</p>
             </div>
-
+            <div className="flex items-center gap-3 mt-3">
+              <MdMessage />
+              <p>cba@gmail.com</p>
+            </div>
+            <div className="flex items-center gap-3 mt-3">
+              <MdCall />
+              <p>+911</p>
+            </div>
           </div>
         </div>
-        <div className="hidden sm:block">
-            <div className="text-center">
-                <span className="text-sm text-gray-400 ">
- Copyright &copy; {new Date().getFullYear()} by BC
-                </span>
-                <div className="flex items-center justify-center gap-4 pb-4">
-                    <a href="#">
-                        <FaInstagram className="text-4xl"/>
-                    </a>
-                    <a href="#">
-                        <FaFacebook className="text-4xl"/>
-                    </a>
-                    <a href="#">
-<FaLinkedin className="text-4xl"/>
-                    </a>
-                </div>
-                <span className="text-sm text-gray-400 "> 
-                    <ul className="flex gap-3">
-                        <li>Privacy Policy</li>
-                        <li>Terms & Conditions</li>
-                    </ul>
-                </span>
-            </div>
+
+        {/* Bottom Bar */}
+        <div className="flex flex-col sm:flex-row justify-between items-center py-4 gap-4">
+          
+          {/* Social Icons */}
+          <div className="flex items-center gap-4">
+            <a href="#"><FaInstagram className="text-2xl hover:text-sky-500 transition" /></a>
+            <a href="#"><FaFacebook className="text-2xl hover:text-sky-500 transition" /></a>
+            <a href="#"><FaLinkedin className="text-2xl hover:text-sky-500 transition" /></a>
+          </div>
+
+          {/* Privacy & Terms */}
+          <ul className="flex gap-3 text-sm text-gray-400">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+
+          {/* Copyright */}
+          <span className="text-sm text-gray-400">
+            &copy; {new Date().getFullYear()} BC. All rights reserved.
+          </span>
         </div>
+
       </section>
     </div>
   );
